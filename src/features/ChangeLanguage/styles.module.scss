@@ -1,0 +1,26 @@
+.change-language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    &-single {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        &:hover {
+            box-shadow: 0 0 10px #FF9840;
+        }
+        &:active {
+            box-shadow: 0 0 10px #FF9840;
+        }
+        &__icon {
+            width: 40px;
+        }
+    }
+}

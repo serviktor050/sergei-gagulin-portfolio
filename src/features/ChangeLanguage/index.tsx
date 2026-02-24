@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 import russianFlag from '../../assets/img/svg/russian-flag.svg';
 import usaFlag from '../../assets/img/svg/usa-flag.svg';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 

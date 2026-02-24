@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { SOCIAL_LINKS, EMAIL } from '../../config/constants';
 import mainImage from '../../../assets/img/png/main-image.png';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 

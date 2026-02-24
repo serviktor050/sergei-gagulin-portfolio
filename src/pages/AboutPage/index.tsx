@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 import Technologies from './ui/Technologies';
 import mainImage from '../../assets/img/png/main-image.png';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 

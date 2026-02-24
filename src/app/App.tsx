@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 import { Header, Sidebar } from '../shared/ui';
 import { AboutPage, CompaniesPage, EducationPage, ProjectsPage } from '../pages';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
