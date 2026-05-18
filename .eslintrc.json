@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es2021": true,
@@ -18,39 +19,28 @@
     "react",
     "@typescript-eslint"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "rules": {
     "indent": [ "error", 2 ],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     "max-len": [ "error", { "code": 130 } ],
     "no-console": "off",
     "quotes": [ "error", "single" ],
     "semi": [ "error", "always" ],
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
-    "no-use-before-define": "off",
-    "jsx-a11y/anchor-is-valid": "off",
-    "react/function-component-definition": "off",
-    "react/no-arrow-function-lifecycle": "off",
-    "react/no-invalid-html-attribute": "off",
-    "react/no-namespace": "off",
-    "react/no-unused-class-component-methods": "off",
-    "react/prefer-exact-props": "off",
-    "no-return-await": "off",
-    "react/jsx-props-no-spreading": "off",
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": [ "error" ],
-    "no-unused-expressions": [ "error", { "allowTernary": true } ],
+    "@typescript-eslint/no-unused-expressions": [ "error", { "allowTernary": true } ],
     "object-curly-spacing": [ "error", "always" ],
     "array-bracket-spacing": [ "error", "always" ],
-    "react/forbid-prop-types": ["error", { "forbid": [] }],
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
     "react/jsx-no-bind": "off",
-    "object-curly-newline": "off",
-    "no-bitwise": "off",
-    "dot-notation": "off",
-    "camelcase": "off",
     "no-debugger": "warn",
-    "linebreak-style": "off",
-    "no-restricted-syntax": ["error"],
     "import/prefer-default-export": "off",
     "import/no-unresolved": "off"
   }
