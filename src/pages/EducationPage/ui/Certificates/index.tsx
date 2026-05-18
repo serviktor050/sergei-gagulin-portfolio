@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import { CERTIFICATES } from '../../config/constants';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 

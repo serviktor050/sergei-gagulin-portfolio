@@ -4,7 +4,7 @@ import COMPANIES from '../../config/constants';
 import { useTranslation } from 'react-i18next';
 import useIsRussianLang from '../../../../shared/lib/useIsRussianLang';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 

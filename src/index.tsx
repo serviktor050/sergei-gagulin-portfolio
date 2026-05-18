@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <HashRouter future={{ v7_startTransition: true }}>
+    <HashRouter>
       <React.Suspense fallback="loading">
         <App />
       </React.Suspense>

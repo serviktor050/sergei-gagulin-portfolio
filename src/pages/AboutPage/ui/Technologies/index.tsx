@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import classNames from 'classnames/bind';
 import { TECHNOLOGIES } from '../../config/constants';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 

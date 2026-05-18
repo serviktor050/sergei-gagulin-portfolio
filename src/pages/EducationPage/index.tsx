@@ -5,7 +5,7 @@ import EducationCard from './ui/EducationCard';
 import Certificates from './ui/Certificates';
 import { HIGHER_EDUCATION, ADDITIONAL_EDUCATION } from './config/constants';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
