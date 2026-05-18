@@ -3,7 +3,6 @@ import { HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './app/App';
-
 import './i18n';
 
 const root = ReactDOM.createRoot(
@@ -11,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter future={{ v7_startTransition: true }}>
       <React.Suspense fallback="loading">
         <App />
       </React.Suspense>
