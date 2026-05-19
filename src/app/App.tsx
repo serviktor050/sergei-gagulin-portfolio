@@ -10,7 +10,7 @@ const cx = classNames.bind(styles);
 
 function App() {
   return (
-    <>
+    <div className={cx('main-layout')}>
       <Header />
       <div className={cx('main-container')}>
         <Sidebar />
@@ -35,7 +35,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default App;
