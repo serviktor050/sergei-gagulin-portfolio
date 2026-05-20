@@ -3,7 +3,28 @@
 
 .main-layout {
     margin: 0 auto;
-    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @include desktop {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @include small-desktop {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @include tablet {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @include mobile {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .main-container {
         display: flex;
@@ -11,7 +32,7 @@
         gap: 10px;
         margin: 0 auto;
 
-        @media (max-width: 768px) {
+        @include mobile {
             flex-direction: column-reverse;
             align-items: center;
         }
@@ -23,7 +44,8 @@
             border-radius: 15px;
             background: linear-gradient(-90deg, $primary-1, $secondary-a-0);
             padding: 25px 30px 25px 50px;
-            @media (max-width: 768px) {
+
+            @include mobile {
                 min-height: 0;
                 background: linear-gradient(180deg, $primary-1, $secondary-a-0);
                 padding: 15px 0;
