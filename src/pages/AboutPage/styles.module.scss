@@ -1,99 +1,95 @@
+@use '../../variables' as *;
+@use '../../mixins' as *;
+
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 15px;
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
+
+    @include tablet {
         align-items: center;
-        width: 100%;
-        gap: 15px;
     }
+
     .title {
-        font-size: 36px;
+        font-size: 34px;
         font-weight: 600;
-        color: #FFFFFF;
-        @media (max-width: 768px) {
+        color: $white;
+
+        @include desktop {
+            font-size: 30px;
+        }
+
+        @include small-desktop {
             font-size: 24px;
-            font-weight: 600;
-            color: #FFFFFF;
+        }
+
+        @include tablet {
+            font-size: 30px;
+        }
+
+        @include mobile {
+            font-size: 24px;
         }
     }
+
     .wrapper {
         display: flex;
         flex-direction: column;
         gap: 25px;
-        height: 100%;
         border-radius: 15px;
-        background: #FFFFFF;
+        background: $white;
         padding: 10px 15px;
-        @media (max-width: 768px) {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 87%;
-            height: 100%;
-            border-radius: 15px;
-            background: #FFFFFF;
-            padding: 10px 15px;
-        }
+
         .description {
             display: flex;
             flex-direction: column;
             gap: 15px;
             width: 100%;
-            @media (max-width: 768px) {
-                display: flex;
-                flex-direction: column;
+
+            @include tablet {
                 gap: 10px;
-                width: 100%;
             }
+            
             &__item {
                 border-radius: 15px;
                 padding: 10px 20px;
-                color: #071A71;
+                color: $primary-2;
                 font-size: 16px;
                 text-align: justify;
-                box-shadow: 0 0 10px #cccccc;
-                white-space: pre-line;
-                @media (max-width: 768px) {
-                    border-radius: 15px;
+                box-shadow: 0 0 10px $grey;
+
+                @include tablet {
                     padding: 5px 10px;
-                    color: #071A71;
                     font-size: 14px;
                     text-align: justify;
-                    box-shadow: 0 0 10px #cccccc;
                 }
+
                 &-with-photo {
                     display: flex;
                     flex-direction: row;
                     gap: 10px;
                     border-radius: 15px;
-                    color: #071A71;
-                    font-size: 14px;
+                    color: $primary-2;
+                    font-size: 16px;
                     text-align: justify;
-                    box-shadow: 0 0 10px #cccccc;
-                    @media (max-width: 768px) {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 10px;
+                    box-shadow: 0 0 10px $grey;
+
+                    @include tablet {
                         padding: 5px 10px;
                     }
+
                     &__text {
                         width: 100%;
                         border-radius: 15px;
                         padding: 10px 20px;
-                        color: #071A71;
+                        color: $primary-2;
                         font-size: 16px;
                         text-align: justify;
-                        box-shadow: 0 0 10px #cccccc;
-                        white-space: pre-line;
-                        @media (max-width: 768px) {
-                            width: 60%;
+                        box-shadow: 0 0 10px $grey;
+
+                        @include tablet {
                             font-size: 14px;
-                            text-align: justify;
-                            color: #071A71;
                             box-shadow: none;
                             padding: 0;
                             border-radius: 0;
@@ -101,17 +97,20 @@
                     }
                 }
             }
+
             &-photo {
                 display: none;
-                @media (max-width: 768px) {
+
+                @include tablet {
                     display: flex;
                     align-items: center;
-                    width: 40%;
+                    width: 65%;
+
                     &__img {
                         object-fit: cover;
                         width: 100%;
                         border-radius: 15px;
-                        box-shadow: 0 0 10px #cccccc;
+                        box-shadow: 0 0 10px $grey;
                     }
                 }
             }

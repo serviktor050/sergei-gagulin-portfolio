@@ -1,91 +1,110 @@
+@use '../../../variables' as *;
+@use '../../../mixins' as *;
+
 .sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 15%;
-    min-height: 79.5vh;
-    padding: 40px 50px;
-    background: linear-gradient(90deg, #2D3C82, #01939A);
+    padding: 25px;
+    background: linear-gradient(90deg, $primary-1, $secondary-a-0);
     border-radius: 15px;
-    gap: 46px;
-    @media (max-width: 768px) {
-        width: 100%;
-        min-height: 0;
-        background: linear-gradient(0deg, #2D3C82, #01939A);
-        padding: 20px 0;
+    gap: 40px;
+
+    @include tablet {
+        background: linear-gradient(0deg, $primary-1, $secondary-a-0);
+        padding: 20px;
         gap: 20px;
     }
+
     &-photo {
         width: 250px;
         height: 250px;
-        box-shadow: 0 0 10px #cccccc;
+        box-shadow: 0 0 10px $grey;
         border-radius: 130px;
-        @media (max-width: 768px) {
-            width: 100px;
-            height: 100px;
-            border-radius: 100px;
+
+        @include tablet {
+            width: 200px;
+            height: 200px;
         }
+
+        @include mobile {
+            width: 150px;
+            height: 150px;
+        }
+
         &__img {
             height: 100%;
             width: 100%;
             border-radius: 130px;
-            @media (max-width: 768px) {
-                border-radius: 100px;
-            }
         }
     }
+
     &-title {
         display: flex;
         flex-direction: column;
         gap: 10px;
         align-items: center;
         justify-content: center;
+
         &__name {
             font-size: 24px;
             font-weight: 600;
-            color: #FFFFFF;
-            @media (max-width: 768px) {
+            color: $white;
+        }
+
+        &__profession {
+            font-size: 20px;
+            font-weight: 500;
+            color: $complement-4;
+            text-align: center;
+
+            @include tablet {
                 font-size: 18px;
             }
-        }
-        &__profession {
-            font-size: 16px;
-            font-weight: 600;
-            color: #ffd673;
-            text-align: center;
-            @media (max-width: 768px) {
-                font-size: 14px;
+
+            @include mobile {
+                font-size: 16px;
             }
         }
     }
+
     &-description {
         display: flex;
-        padding: 5px 10px;
+        padding: 10px 20px;
         justify-content: center;
         align-items: center;
-        text-align: justify;
-        background: #FFFFFF;
+        box-shadow: 0 0 10px $grey;
+        background: $white;
         border-radius: 15px;
-        color: #071A71;
         font-size: 16px;
-        @media (max-width: 768px) {
-            width: 90%;
+        color: $primary-2;
+        text-align: justify;
+
+        @include tablet {
             font-size: 14px;
         }
+
+        @include mobile {
+            padding: 5px 10px;
+        }
     }
+
     &-links {
         display: flex;
         flex-direction: row;
         gap: 15px;
         justify-content: center;
         align-items: center;
-        background: #FFFFFF;
+        background: $white;
+        box-shadow: 0 0 10px $grey;
         width: 70%;
         border-radius: 15px;
         height: 50px;
-        @media (max-width: 768px) {
+
+        @include tablet {
             width: 50%;
         }
+
         &__icon {
             display: flex;
             flex-direction: row;
@@ -97,14 +116,13 @@
             border-radius: 30px;
             background: transparent;
             cursor: pointer;
+
             &:hover {
-                border: 2px solid #FF9840;
-            }
-            :active {
-                background: #FF9840;
+                border: 2px solid $secondary-b-3;
             }
         }
     }
+
     &-send-btn {
         display: flex;
         justify-content: center;
@@ -113,21 +131,22 @@
         padding: 15px 15px;
         border-radius: 15px;
         border: none;
-        background: linear-gradient(0deg, #ffb473, #ffd673);
-        margin-top: auto;
-        color: #FFFFFF;
+        background: linear-gradient(0deg, $secondary-b-4, $complement-4);
         font-size: 16px;
         font-weight: 600;
+        color: $white;
         cursor: pointer;
-        @media (max-width: 768px) {
-            margin-top: 0;
+
+        @include mobile {
             font-size: 14px;
         }
+
         &:hover {
-            box-shadow: 0 0 10px #ffb473;
+            box-shadow: 0 0 10px $secondary-b-4;
         }
+
         &:active {
-            background: #ffb473;
+            background: $secondary-b-4;
         }
     }
 }

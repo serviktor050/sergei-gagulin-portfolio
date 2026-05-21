@@ -43,7 +43,7 @@ export const TECHNOLOGIES: ITechnologies[] = [
   },
   {
     id: 9,
-    name: 'REST && WebSockets',
+    name: 'REST API && WebSockets',
     rate: 'Advanced',
   },
   {
