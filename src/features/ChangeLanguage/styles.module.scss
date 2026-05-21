@@ -1,8 +1,12 @@
+@use '../../variables' as *;
+@use '../../mixins' as *;
+
 .change-language {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5px;
+
     &-single {
         display: flex;
         justify-content: center;
@@ -13,12 +17,15 @@
         cursor: pointer;
         border: none;
         background: transparent;
+
         &:hover {
-            box-shadow: 0 0 10px #FF9840;
+            box-shadow: 0 0 10px $secondary-b-3;
         }
+
         &:active {
-            box-shadow: 0 0 10px #FF9840;
+            box-shadow: 0 0 10px $secondary-b-3;
         }
+
         &__icon {
             width: 40px;
         }

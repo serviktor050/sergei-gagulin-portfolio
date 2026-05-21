@@ -1,114 +1,78 @@
+@use '../../../../variables' as *;
+@use '../../../../mixins' as *;
+
 .education-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 90%;
     border-radius: 15px;
     padding: 10px 20px;
-    color: #071A71;
+    color: $primary-2;
     font-size: 16px;
     text-align: justify;
-    box-shadow: 0 0 10px #cccccc;
-}
+    box-shadow: 0 0 10px $grey;
 
-.education-card-name {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.education-card-sub-title {
-    font-weight: 600;
-}
-
-.education-card-container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
-.education-card-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    float: right;
-    margin-left: 10px;
-}
-
-.education-card-photo__img {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 15px;
-}
-
-.education-card-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.education-card-info__sub-title {
-    font-weight: 600;
-}
-
-@media all and (min-width: 320px) and (max-width: 768px) {
-    .education-card {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        border-radius: 15px;
-        padding: 5px 0;
-        color: #071A71;
-        font-size: 16px;
+    @include tablet {
+        padding: 5px 10px;
+        font-size: 14px;
         text-align: justify;
-        box-shadow: 0 0 10px #cccccc;
     }
 
-    .education-card-name {
-        font-size: 16px;
+    &-name {
+        font-size: 20px;
         font-weight: 600;
-        padding-left: 10px;
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
     }
 
-    .education-card-sub-title {
-        font-weight: 600;
-    }
-
-    .education-card-container {
+    &-container {
         display: flex;
         flex-direction: row;
-        gap: 10px;
-        width: 95%;
-        margin: 0 auto;
-    }
+        gap: 30px;
 
-    .education-card-photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 40%;
-        margin-left: 0;
-    }
+        @include tablet {
+            gap: 15px;
+        }
 
-    .education-card-photo__img {
-        object-fit: cover;
-        width: 100%;
-    }
+        .education-card-photo {
+            width: 20%;
 
-    .education-card-info {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 60%;
-    }
+            @include tablet {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 40%;
+            }
 
-    .education-card-info__sub-title {
-        font-weight: 600;
-    }
+            &__img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
 
-    .education-card-info__item {
-        font-size: 14px;
+        .education-card-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &-item {
+                font-size: 16px;
+
+                @include tablet {
+                    font-size: 14px;
+                }
+
+                &__sub-title {
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }

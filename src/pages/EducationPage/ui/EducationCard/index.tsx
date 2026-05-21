@@ -26,26 +26,26 @@ function EducationCard({ education }: educationCardProps) {
           <img className={cx('education-card-photo__img')} alt={alt} src={src} />
         </div>
         <div className={cx('education-card-info')}>
-          <div className={cx('education-card-info__item')}>
-            <div className={cx('education-card-info__sub-title')}>
+          <div className={cx('education-card-info-item')}>
+            <div className={cx('education-card-info-item__sub-title')}>
               {t('education-page.card.sub-title.description')}
             </div>
             {useIsRussianLang() ? description.ru : description.en}
           </div>
-          <div className={cx('education-card-info__item')}>
-            <div className={cx('education-card-info__sub-title')}>
+          <div className={cx('education-card-info-item')}>
+            <div className={cx('education-card-info-item__sub-title')}>
               {t('education-page.card.sub-title.faculty')}
             </div>
             {useIsRussianLang() ? faculty.ru : faculty.en}
           </div>
-          <div className={cx('education-card-info__item')}>
-            <div className={cx('education-card-info__sub-title')}>
+          <div className={cx('education-card-info-item')}>
+            <div className={cx('education-card-info-item__sub-title')}>
               {t('education-page.card.sub-title.period')}
             </div>
             {useIsRussianLang() ? period.ru : period.en}
           </div>
-          <div className={cx('education-card-info__item')}>
-            <div className={cx('education-card-info__sub-title')}>
+          <div className={cx('education-card-info-item')}>
+            <div className={cx('education-card-info-item__sub-title')}>
               {t('education-page.card.sub-title.speciality')}
             </div>
             {useIsRussianLang() ? speciality.ru : speciality.en}

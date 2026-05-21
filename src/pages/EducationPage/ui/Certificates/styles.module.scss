@@ -1,30 +1,23 @@
+@use '../../../../variables' as *;
+@use '../../../../mixins' as *;
+
 .slider {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 10px;
-}
 
-.slide {
-    width: 30%;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #cccccc;
-}
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-@media all and (min-width: 320px) and (max-width: 768px) {
-    .slider {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        gap: 10px;
+    @include mobile {
+        grid-template-columns: 1fr;
     }
 
     .slide {
         width: 100%;
         border-radius: 15px;
-        box-shadow: 0 0 10px #cccccc;
+        box-shadow: 0 0 10px $grey;
     }
 }
