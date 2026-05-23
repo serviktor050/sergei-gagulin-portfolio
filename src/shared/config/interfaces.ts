@@ -1,4 +1,4 @@
-export interface NavigagationItem {
+export interface NavigationItem {
   id: number,
   href: string,
   title: string,

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames/bind';
 
-import { NavigagationItem } from '../../shared/config/interfaces';
+import { NavigationItem } from '../../shared/config/interfaces';
 
 import styles from './styles.module.scss';
 
@@ -12,7 +12,7 @@ const cx = classNames.bind(styles);
 const Navigation: React.FC = () => {
   const { t } = useTranslation();
 
-  const navigationItems: NavigagationItem[] = [
+  const navigationItems: NavigationItem[] = [
     {
       id: 1,
       href: '/',

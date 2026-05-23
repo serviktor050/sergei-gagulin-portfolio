@@ -12,7 +12,9 @@ const Technologies: React.FC = () => {
 
   return (
     <div className={cx('technologies')}>
-      <div className={cx('technologies-title')}>{t('about-page.technologies.title')}</div>
+      <div className={cx('technologies-title')}>
+        {t('about-page.technologies.title')}
+      </div>
       <div className={cx('technologies-wrapper')}>
         {TECHNOLOGIES.map((technology) => (
           <div className={cx('technology-item')} key={technology.id}>

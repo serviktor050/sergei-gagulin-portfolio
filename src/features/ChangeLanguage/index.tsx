@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames/bind';
+
 import russianFlag from '../../assets/img/svg/russian-flag.svg';
 import usaFlag from '../../assets/img/svg/usa-flag.svg';
 

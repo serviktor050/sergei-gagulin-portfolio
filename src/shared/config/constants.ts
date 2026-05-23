@@ -1,4 +1,5 @@
 import { SocialLink } from './interfaces';
+
 import github from '../../assets/img/svg/github.svg';
 import telegram from '../../assets/img/svg/telegram.svg';
 import facebook from '../../assets/img/svg/facebook.svg';

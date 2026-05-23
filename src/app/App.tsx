@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import classNames from 'classnames/bind';
+
 import { Header, Sidebar } from '../widgets';
 import { AboutPage, CompaniesPage, EducationPage, ProjectsPage } from '../pages';
 

@@ -11,7 +11,7 @@
         gap: 10px;
     }
 
-    &__item {
+    &-item {
         border-radius: 15px;
         padding: 10px 20px;
         color: $primary-2;
@@ -55,22 +55,22 @@
                     border-radius: 0;
                 }
             }
-        }
-    }
 
-    &-photo {
-        display: none;
+            &__photo {
+                display: none;
 
-        @include tablet {
-            display: flex;
-            align-items: center;
-            width: 65%;
+                @include tablet {
+                    display: flex;
+                    align-items: center;
+                    width: 65%;
 
-            &__img {
-                object-fit: cover;
-                width: 100%;
-                border-radius: 15px;
-                box-shadow: 0 0 10px $grey;
+                    &__img {
+                        object-fit: cover;
+                        width: 100%;
+                        border-radius: 15px;
+                        box-shadow: 0 0 10px $grey;
+                    }
+                }
             }
         }
     }
