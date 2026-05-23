@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
 import { CompaniesList } from './ui';
 import { PageLayout } from '../../shared/layouts';
 

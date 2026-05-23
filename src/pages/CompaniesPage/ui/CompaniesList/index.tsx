@@ -1,8 +1,10 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import COMPANIES from '../../config/constants';
 import { useTranslation } from 'react-i18next';
+
 import useIsRussianLang from '../../../../shared/lib/useIsRussianLang';
+
+import COMPANIES from '../../config/constants';
 
 import styles from './styles.module.scss';
 
@@ -27,16 +29,15 @@ const CompaniesList: React.FC = () => {
             {name}
           </div>
           <div className={cx('company-item-description')}>
-            <div className={cx('company-item-sub-title')}>
-              {t('companies-page.company-item.sub-title.about-company')}
+            <div className={cx('company-item-description-photo')}>
+              <img className={cx('company-item-description-photo__img')} alt={alt} src={src} />
             </div>
-            <div className={cx('company-item-photo')}>
-              <img className={cx('company-item-photo__img')} alt={alt} src={src} />
+            <div className={cx('company-item-description__text')}>
+              {useIsRussianLang() ? description.ru : description.en}
             </div>
-            {useIsRussianLang() ? description.ru : description.en}
           </div>
           <div className={cx('company-item-href')}>
-            <div className={cx('company-item-sub-title')}>
+            <div className={cx('company-item-href__sub-title')}>
               {t('companies-page.company-item.sub-title.link')}
             </div>
             <a href={href} target="_blank" rel="noreferrer">
@@ -44,13 +45,13 @@ const CompaniesList: React.FC = () => {
             </a>
           </div>
           <div className={cx('company-item-period')}>
-            <div className={cx('company-item-sub-title')}>
+            <div className={cx('company-item-period__sub-title')}>
               {t('companies-page.company-item.sub-title.period')}
             </div>
             {useIsRussianLang() ? period.ru : period.en}
           </div>
         </div>
-      ) )}
+      ))}
     </div>
   );
 };
