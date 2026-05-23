@@ -1,4 +1,4 @@
-export interface IEducation {
+export interface Education {
   src: string,
   alt: string,
   name: {
@@ -23,7 +23,7 @@ export interface IEducation {
   },
 }
 
-export interface ICertificate {
+export interface Certificate {
   id: number,
   src: string,
   alt: string,

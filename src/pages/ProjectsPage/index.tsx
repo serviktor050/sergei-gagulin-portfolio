@@ -1,25 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import classNames from 'classnames/bind';
-import ProjectsList from './ui/ProjectsList';
-
-import styles from './styles.module.scss';
-
-const cx = classNames.bind(styles);
+import { ProjectsList } from './ui';
+import { PageLayout } from '../../shared/layouts';
 
 function ProjectsPage() {
   const { t } = useTranslation();
 
   return (
-    <div className={cx('container')}>
-      <div className={cx('title')}>{t('projects-page.title')}</div>
-      <div className={cx('wrapper')}>
-        <div className={cx('description')}>
-          <div className={cx('description__item')}>{t('projects-page.description-1')}</div>
-        </div>
-        <ProjectsList />
-      </div>
-    </div>
+    <PageLayout title={t('projects-page.title')}>
+      <ProjectsList />
+    </PageLayout>
   );
 }
 export default ProjectsPage;

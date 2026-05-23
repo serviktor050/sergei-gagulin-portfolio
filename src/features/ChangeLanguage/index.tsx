@@ -8,12 +8,12 @@ import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-type languageType = {
+interface languageType {
   name: string,
   flag: string,
 }
 
-function ChangeLanguage() {
+const ChangeLanguage: React.FC = () => {
   const { i18n } = useTranslation();
 
   const languages: languageType[] = [
@@ -46,5 +46,6 @@ function ChangeLanguage() {
       ))}
     </div>
   );
-}
+};
+
 export default ChangeLanguage;

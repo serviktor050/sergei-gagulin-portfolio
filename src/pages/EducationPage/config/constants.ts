@@ -7,9 +7,9 @@ import basedJs from '../../../assets/img/png/based-js.png';
 import basedJsInBrowser from '../../../assets/img/png/based-js-in-browser.png';
 import advancedJs from '../../../assets/img/png/advanced-js.png';
 import react from '../../../assets/img/png/react.png';
-import { ICertificate, IEducation } from './intefaces';
+import { Certificate, Education } from './intefaces';
 
-export const HIGHER_EDUCATION: IEducation = {
+export const HIGHER_EDUCATION: Education = {
   src: tstu,
   alt: 'TSTU',
   name: {
@@ -34,7 +34,7 @@ export const HIGHER_EDUCATION: IEducation = {
   },
 };
 
-export const ADDITIONAL_EDUCATION: IEducation = {
+export const ADDITIONAL_EDUCATION: Education = {
   src: netology,
   alt: 'Netology',
   name: {
@@ -59,7 +59,7 @@ export const ADDITIONAL_EDUCATION: IEducation = {
   },
 };
 
-export const CERTIFICATES: ICertificate[] = [
+export const CERTIFICATES: Certificate[] = [
   {
     id: 1,
     src: git,

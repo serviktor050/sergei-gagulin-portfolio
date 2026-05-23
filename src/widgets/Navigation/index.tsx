@@ -2,16 +2,16 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames/bind';
-import { INavigagationItem } from '../../config/interfaces';
+import { NavigagationItem } from '../../shared/config/interfaces';
 
 import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Navigation() {
+const Navigation: React.FC = () => {
   const { t } = useTranslation();
 
-  const navigationItems: INavigagationItem[] = [
+  const navigationItems: NavigagationItem[] = [
     {
       id: 1,
       href: '/',
@@ -49,5 +49,6 @@ function Navigation() {
       ))}
     </div>
   );
-}
+};
+
 export default Navigation;

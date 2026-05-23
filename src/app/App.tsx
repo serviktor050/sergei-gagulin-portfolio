@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import classNames from 'classnames/bind';
-import { Header, Sidebar } from '../shared/ui';
+import { Header, Sidebar } from '../widgets';
 import { AboutPage, CompaniesPage, EducationPage, ProjectsPage } from '../pages';
 
 import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className={cx('main-layout')}>
       <Header />
@@ -37,5 +37,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
+
 export default App;

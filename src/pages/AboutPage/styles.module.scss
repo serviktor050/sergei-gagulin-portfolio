@@ -1,57 +1,46 @@
 @use '../../variables' as *;
 @use '../../mixins' as *;
 
-.container {
+.description {
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 15px;
+    width: 100%;
 
     @include tablet {
-        align-items: center;
+        gap: 10px;
     }
 
-    .title {
-        font-size: 34px;
-        font-weight: 600;
-        color: $white;
-
-        @include desktop {
-            font-size: 30px;
-        }
-
-        @include small-desktop {
-            font-size: 24px;
-        }
+    &__item {
+        border-radius: 15px;
+        padding: 10px 20px;
+        color: $primary-2;
+        font-size: 16px;
+        text-align: justify;
+        box-shadow: 0 0 10px $grey;
 
         @include tablet {
-            font-size: 30px;
+            padding: 5px 10px;
+            font-size: 14px;
+            text-align: justify;
         }
 
-        @include mobile {
-            font-size: 24px;
-        }
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        border-radius: 15px;
-        background: $white;
-        padding: 10px 15px;
-
-        .description {
+        &-with-photo {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 100%;
+            flex-direction: row;
+            gap: 10px;
+            border-radius: 15px;
+            color: $primary-2;
+            font-size: 16px;
+            text-align: justify;
+            box-shadow: 0 0 10px $grey;
 
             @include tablet {
-                gap: 10px;
+                padding: 5px 10px;
             }
-            
-            &__item {
+
+            &__text {
+                width: 100%;
                 border-radius: 15px;
                 padding: 10px 20px;
                 color: $primary-2;
@@ -60,59 +49,28 @@
                 box-shadow: 0 0 10px $grey;
 
                 @include tablet {
-                    padding: 5px 10px;
                     font-size: 14px;
-                    text-align: justify;
-                }
-
-                &-with-photo {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 10px;
-                    border-radius: 15px;
-                    color: $primary-2;
-                    font-size: 16px;
-                    text-align: justify;
-                    box-shadow: 0 0 10px $grey;
-
-                    @include tablet {
-                        padding: 5px 10px;
-                    }
-
-                    &__text {
-                        width: 100%;
-                        border-radius: 15px;
-                        padding: 10px 20px;
-                        color: $primary-2;
-                        font-size: 16px;
-                        text-align: justify;
-                        box-shadow: 0 0 10px $grey;
-
-                        @include tablet {
-                            font-size: 14px;
-                            box-shadow: none;
-                            padding: 0;
-                            border-radius: 0;
-                        }
-                    }
+                    box-shadow: none;
+                    padding: 0;
+                    border-radius: 0;
                 }
             }
+        }
+    }
 
-            &-photo {
-                display: none;
+    &-photo {
+        display: none;
 
-                @include tablet {
-                    display: flex;
-                    align-items: center;
-                    width: 65%;
+        @include tablet {
+            display: flex;
+            align-items: center;
+            width: 65%;
 
-                    &__img {
-                        object-fit: cover;
-                        width: 100%;
-                        border-radius: 15px;
-                        box-shadow: 0 0 10px $grey;
-                    }
-                }
+            &__img {
+                object-fit: cover;
+                width: 100%;
+                border-radius: 15px;
+                box-shadow: 0 0 10px $grey;
             }
         }
     }

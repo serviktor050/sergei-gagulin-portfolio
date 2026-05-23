@@ -1,9 +1,9 @@
-import { ISocialLink } from './interfaces';
+import { SocialLink } from './interfaces';
 import github from '../../assets/img/svg/github.svg';
 import telegram from '../../assets/img/svg/telegram.svg';
 import facebook from '../../assets/img/svg/facebook.svg';
 
-export const SOCIAL_LINKS: ISocialLink[] = [
+export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 1,
     href: 'https://github.com/serviktor050',

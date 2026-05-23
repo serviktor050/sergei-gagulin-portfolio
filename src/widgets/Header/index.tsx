@@ -1,14 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames/bind';
-import { ChangeLanguage } from '../../../features';
+import { ChangeLanguage } from '../../features';
 import { Navigation } from '../index';
 
 import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Header() {
+const Header: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -22,5 +22,6 @@ function Header() {
       <Navigation />
     </div>
   );
-}
+};
+
 export default Header;

@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Technologies() {
+const Technologies: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -28,5 +28,6 @@ function Technologies() {
       </div>
     </div>
   );
-}
+};
+
 export default Technologies;

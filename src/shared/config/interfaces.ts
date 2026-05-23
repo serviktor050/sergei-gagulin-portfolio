@@ -1,10 +1,10 @@
-export interface INavigagationItem {
+export interface NavigagationItem {
   id: number,
   href: string,
   title: string,
 }
 
-export interface ISocialLink{
+export interface SocialLink{
   id: number,
   href: string,
   src: string,

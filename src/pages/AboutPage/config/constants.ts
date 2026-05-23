@@ -1,14 +1,14 @@
-import { ITechnologies } from './interfaces';
+import { Technologies } from './interfaces';
 
-export const TECHNOLOGIES: ITechnologies[] = [
+export const TECHNOLOGIES: Technologies[] = [
   {
     id: 1,
-    name: 'Html5 & (CSS3 || SCSS)',
+    name: 'Html5 & SCSS',
     rate: 'Advanced',
   },
   {
     id: 2,
-    name: 'JavaScript (ES6) & TypeScript',
+    name: 'JavaScript & TypeScript',
     rate: 'Advanced',
   },
   {

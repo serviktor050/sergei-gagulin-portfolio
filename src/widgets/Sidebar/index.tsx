@@ -1,14 +1,14 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import { useTranslation } from 'react-i18next';
-import { SOCIAL_LINKS, EMAIL } from '../../config/constants';
-import mainImage from '../../../assets/img/png/main-image.png';
+import { SOCIAL_LINKS, EMAIL } from '../../shared/config/constants';
+import mainImage from '../../assets/img/png/main-image.png';
 
 import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Sidebar() {
+const Sidebar: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -48,5 +48,6 @@ function Sidebar() {
       </button>
     </div>
   );
-}
+};
+
 export default Sidebar;

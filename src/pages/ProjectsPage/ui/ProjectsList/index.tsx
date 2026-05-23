@@ -8,8 +8,9 @@ import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-function ProjectsList() {
+const ProjectsList: React.FC = () => {
   const { t } = useTranslation();
+
   return (
     <div className={cx('project-list-container')}>
       <div className={cx('project-list-wrapper')}>
@@ -76,5 +77,6 @@ function ProjectsList() {
       </div>
     </div>
   );
-}
+};
+
 export default ProjectsList;

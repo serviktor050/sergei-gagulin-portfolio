@@ -1,9 +1,9 @@
 import flycode from '../../../assets/img/png/flycode.png';
 import spider from '../../../assets/img/png/spider.png';
 import stecpoint from '../../../assets/img/png/stecpoint.png';
-import { ICompany } from './interfaces';
+import { Company } from './interfaces';
 
-const COMPANIES: ICompany[] = [
+const COMPANIES: Company[] = [
   {
     id: 1,
     name: 'FlyCode',
