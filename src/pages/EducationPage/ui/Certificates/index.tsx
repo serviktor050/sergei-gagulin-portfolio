@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+
 import { CERTIFICATES } from '../../config/constants';
 
 import styles from './styles.module.scss';

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames/bind';
+
 import { EducationCard, Certificates } from './ui';
 import { PageLayout } from '../../shared/layouts';
 import { HIGHER_EDUCATION, ADDITIONAL_EDUCATION } from './config/constants';
@@ -9,7 +10,7 @@ import styles from './styles.module.scss';
 
 const cx = classNames.bind(styles);
 
-function EducationPage() {
+const EducationPage: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -22,5 +23,6 @@ function EducationPage() {
       <Certificates />
     </PageLayout>
   );
-}
+};
+
 export default EducationPage;
