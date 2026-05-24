@@ -1,6 +1,7 @@
 import flycode from '../../../assets/img/png/flycode.png';
 import spider from '../../../assets/img/png/spider.png';
 import stecpoint from '../../../assets/img/png/stecpoint.png';
+import triada from '../../../assets/img/png/triada.png';
 import { Company } from './interfaces';
 
 const COMPANIES: Company[] = [
@@ -53,6 +54,23 @@ const COMPANIES: Company[] = [
     period: {
       ru: 'с 12.2023 по 03.2025',
       en: 'from 2023.12 to 2025.03',
+    },
+  },
+  {
+    id: 4,
+    name: 'Триада',
+    description: {
+      ru: 'Разработка и поддержка технологичных сайтов, высоконагруженных e-commerce проектов, корпоративных порталов,' +
+        ' CRM систем, мобильных приложений.',
+      en: 'Development and support of high-tech websites, high-load e-commerce projects, corporate portals, '+
+        ' CRM systems, and mobile applications.',
+    },
+    href: 'https://triadasite.ru/',
+    src: triada,
+    alt: 'Triada',
+    period: {
+      ru: 'с 07.2025 по 05.2026',
+      en: 'from 2025.07 to 2026.05',
     },
   },
 ];
