@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
 import { ProjectsList } from './ui';
 import { PageLayout } from '../../shared/layouts';
 
-function ProjectsPage() {
+const ProjectsPage: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -11,5 +12,6 @@ function ProjectsPage() {
       <ProjectsList />
     </PageLayout>
   );
-}
+};
+
 export default ProjectsPage;

@@ -9,10 +9,9 @@ import yourservice from '../../../assets/img/png/yourservice.png';
 import rafarma from '../../../assets/img/png/rafarma.png';
 import serviceme from '../../../assets/img/png/serviceme.png';
 import wandwork from '../../../assets/img/png/wandwork.png';
+import { Project } from './interfaces';
 
-import { IProject } from './interfaces';
-
-const PROJECTS: IProject[] = [
+const PROJECTS: Project[] = [
   {
     id: 1,
     name: 'Рестомаркет Студенец / Кофейня Habit',
@@ -421,7 +420,7 @@ const PROJECTS: IProject[] = [
   },
   {
     id: 9,
-    name: '@Your Service (International Project)',
+    name: '@Your Service',
     description: {
       ru: 'YourService — сайт сервиса для поиска специалистов в Западной Европе.',
       en: 'YourService is a service website for finding specialists in Western Europe.',
