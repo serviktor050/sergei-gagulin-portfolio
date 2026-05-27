@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 
 import { ChangeLanguage } from '../../features';
 import { Navigation } from '../index';
@@ -15,9 +16,11 @@ const Header: React.FC = () => {
   return (
     <div className={cx('header')}>
       <div className={cx('header-title')}>
-        <div className={cx('header-title__name')}>
-          {t('header.title')}
-        </div>
+        <Link to={'/'}>
+          <div className={cx('header-title__name')}>
+            {t('header.title')}
+          </div>
+        </Link>
         <ChangeLanguage />
       </div>
       <Navigation />

@@ -23,10 +23,15 @@
             width: 100%;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         &__name {
             font-size: 34px;
             font-weight: 600;
             color: $white;
+            cursor: pointer;
 
             @include desktop {
                 font-size: 30px;
