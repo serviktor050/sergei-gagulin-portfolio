@@ -1,12 +1,13 @@
-import tstu from '../../../assets/img/png/tstu.png';
-import netology from '../../../assets/img/png/netology.png';
-import git from '../../../assets/img/png/git.png';
-import adaptive from '../../../assets/img/png/adaptive.png';
-import baseOfProgramming from '../../../assets/img/png/base-of-programming.png';
-import basedJs from '../../../assets/img/png/based-js.png';
-import basedJsInBrowser from '../../../assets/img/png/based-js-in-browser.png';
-import advancedJs from '../../../assets/img/png/advanced-js.png';
-import react from '../../../assets/img/png/react.png';
+import tstu from '../../../assets/img/png/education/tstu.png';
+import netology from '../../../assets/img/png/education/netology.png';
+import git from '../../../assets/img/png/certificates/git.png';
+import adaptive from '../../../assets/img/png/certificates/adaptive.png';
+import baseOfProgramming from '../../../assets/img/png/certificates/base-of-programming.png';
+import basedJs from '../../../assets/img/png/certificates/based-js.png';
+import basedJsInBrowser from '../../../assets/img/png/certificates/based-js-in-browser.png';
+import advancedJs from '../../../assets/img/png/certificates/advanced-js.png';
+import react from '../../../assets/img/png/certificates/react.png';
+
 import { Certificate, Education } from './intefaces';
 
 export const HIGHER_EDUCATION: Education = {

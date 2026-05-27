@@ -1,7 +1,8 @@
-import flycode from '../../../assets/img/png/flycode.png';
-import spider from '../../../assets/img/png/spider.png';
-import stecpoint from '../../../assets/img/png/stecpoint.png';
-import triada from '../../../assets/img/png/triada.png';
+import flycode from '../../../assets/img/png/companies/flycode.png';
+import spider from '../../../assets/img/png/companies/spider.png';
+import stecpoint from '../../../assets/img/png/companies/stecpoint.png';
+import triada from '../../../assets/img/png/companies/triada.png';
+
 import { Company } from './interfaces';
 
 const COMPANIES: Company[] = [

@@ -1,76 +1,19 @@
-import unknowCover from '../../../assets/img/png/unknow-cover.png';
-import travelClass from '../../../assets/img/png/travel-class.png';
-import kler from '../../../assets/img/png/kler.png';
-import antiageClinic from '../../../assets/img/png/antiage-clinic.png';
-import lombardL1 from '../../../assets/img/png/lombard-l1.png';
-import pss from  '../../../assets/img/png/pss.png';
-import avtodor from '../../../assets/img/png/avtodor.png';
-import yourservice from '../../../assets/img/png/yourservice.png';
-import rafarma from '../../../assets/img/png/rafarma.png';
-import serviceme from '../../../assets/img/png/serviceme.png';
-import wandwork from '../../../assets/img/png/wandwork.png';
+import travelClass from '../../../assets/img/png/projects/travel-class.png';
+import kler from '../../../assets/img/png/projects/kler.png';
+import antiageClinic from '../../../assets/img/png/projects/antiage-clinic.png';
+import lombardL1 from '../../../assets/img/png/projects/lombard-l1.png';
+import avtodor from '../../../assets/img/png/projects/avtodor.png';
+import yourservice from '../../../assets/img/png/projects/yourservice.png';
+import rafarma from '../../../assets/img/png/projects/rafarma.png';
+import serviceme from '../../../assets/img/png/projects/serviceme.png';
+import wandwork from '../../../assets/img/png/projects/wandwork.png';
+import teboil from '../../../assets/img/png/projects/teboil.png';
+
 import { Project } from './interfaces';
 
 const PROJECTS: Project[] = [
   {
     id: 1,
-    name: 'Рестомаркет Студенец / Кофейня Habit',
-    description: {
-      ru: 'Рестомаркет Студенец / Кофейня Habit - это внутренний проект компании FlyCode, ' +
-        'направленный на создание сайта меню для кафе и кофеен, с возможностью QR-оплаты заказа.',
-      en: 'Studenets Restomarket / Habit Coffee Shop is an internal project of FlyCode aimed ' +
-        'at creating a menu site for cafes and coffee shops, with the possibility of QR-payment of the order.',
-    },
-    responsibility: {
-      ru: 'Разработка пользовательского интерфейса приложения. Настройка роутинга. ' +
-        'Разработка CRUD функционала оформления заказа.',
-      en: 'Development of the user interface of the application. Setting up routing. ' +
-        'Development of CRUD functionality for ordering.',
-    },
-    href: '',
-    src: unknowCover,
-    alt: 'Studenets Restomarket / Habit Coffee Shop',
-    stack: [
-      {
-        id: 1,
-        name: 'React 17.0.2',
-      },
-      {
-        id: 2,
-        name: 'React router dom',
-      },
-      {
-        id: 3,
-        name: 'Redux',
-      },
-      {
-        id: 4,
-        name: 'Redux observable',
-      },
-      {
-        id: 5,
-        name: 'Redux thunk',
-      },
-      {
-        id: 6,
-        name: 'RxJS',
-      },
-      {
-        id: 7,
-        name: 'Material UI',
-      },
-      {
-        id: 8,
-        name: 'Axios',
-      },
-    ],
-    period: {
-      ru: 'с 06.2021 по 12.2021',
-      en: 'from 2021.06 to 2021.12',
-    },
-  },
-  {
-    id: 2,
     name: 'Travel Class',
     description: {
       ru: 'Travel Class - это международная платформа, предназначенная для преподавателей, ' +
@@ -102,16 +45,16 @@ const PROJECTS: Project[] = [
       },
       {
         id: 4,
-        name: 'Jquery',
+        name: 'JQuery',
       },
     ],
     period: {
-      ru: 'с 06.2021 по 12.2021',
-      en: 'from 2021.06 to 2021.12',
+      ru: 'с 05.2021 по 12.2021',
+      en: 'from 2021.05 to 2021.12',
     },
   },
   {
-    id: 3,
+    id: 2,
     name: 'Kler',
     description: {
       ru: 'Kler – это сайт магазина современной и элегантной мебели для гостиных, спален и столовых комнат.',
@@ -141,84 +84,16 @@ const PROJECTS: Project[] = [
       },
       {
         id: 4,
-        name: 'Jquery',
+        name: 'JQuery',
       },
     ],
     period: {
-      ru: 'с 06.2021 по 12.2021',
-      en: 'from 2021.06 to 2021.12',
+      ru: 'с 05.2021 по 12.2021',
+      en: 'from 2021.05 to 2021.12',
     },
   },
   {
-    id: 4,
-    name: 'StreamPlatform',
-    description: {
-      ru: 'StreamPlatform – это внутренний проект компании FlyCode, позволяющий пользователю ' +
-        'проводить вебинары и видеотрансляции для своих подписчиков, а так же самому просмативать ' +
-        'стримы других пользователей и подписываться на их обновления.',
-      en: 'StreamPlatform is an internal project of FlyCode company that allows the user to ' +
-        'conduct webinars and video broadcasts for his subscribers, as well as to watch other ' +
-        'users\' streams and subscribe to their updates.',
-    },
-    responsibility: {
-      ru: 'Разработка пользовательского интерфейса приложения. Разработка CRUD функционала ' +
-        'подписок и подписчиков, организации групповых чатов и стримов. Участие в разработке личного кабинета пользователя.',
-      en: 'Development of the user interface of the application. Development of CRUD functionality ' +
-        'for subscriptions and subscribers, organization of group chats and streams. ' +
-        'Participation in the development of the user\'s personal account.',
-    },
-    href: '',
-    src: unknowCover,
-    alt: 'Stream Platform',
-    stack: [
-      {
-        id: 1,
-        name: 'React 17.2.0',
-      },
-      {
-        id: 2,
-        name: 'React router dom',
-      },
-      {
-        id: 3,
-        name: 'React i18next',
-      },
-      {
-        id: 4,
-        name: 'React Query',
-      },
-      {
-        id: 5,
-        name: 'Next',
-      },
-      {
-        id: 6,
-        name: 'TypeScript',
-      },
-      {
-        id: 7,
-        name: 'Antd',
-      },
-      {
-        id: 8,
-        name: 'Axios',
-      },
-      {
-        id: 9,
-        name: 'Eslint',
-      },
-      {
-        id: 10,
-        name: 'Jest',
-      },
-    ],
-    period: {
-      ru: 'с 08.2021 по 12.2021',
-      en: 'from 2021.08 to 2021.12',
-    },
-  },
-  {
-    id: 5,
+    id: 3,
     name: 'AntiAge Clinic',
     description: {
       ru: 'AntiAge Clinic – это медицинская онлайн-платформа для клиник и врачей частной практики, ' +
@@ -247,68 +122,52 @@ const PROJECTS: Project[] = [
     stack: [
       {
         id: 1,
-        name: 'React 18.2.0',
+        name: 'React',
       },
       {
         id: 2,
-        name: 'React router dom',
-      },
-      {
-        id: 3,
         name: 'React hook form',
       },
       {
-        id: 4,
+        id: 3,
         name: 'React i18next',
       },
       {
-        id: 5,
+        id: 4,
         name: 'React Query',
       },
       {
-        id: 6,
-        name: 'Redux',
-      },
-      {
-        id: 7,
+        id: 5,
         name: 'Redux thunk',
       },
       {
-        id: 8,
+        id: 6,
         name: 'Antd',
       },
       {
-        id: 9,
-        name: 'Axios',
-      },
-      {
-        id: 10,
+        id: 7,
         name: 'Classnames',
       },
       {
-        id: 11,
+        id: 8,
         name: 'HTML react parser',
       },
       {
-        id: 12,
-        name: 'Prop Types',
-      },
-      {
-        id: 13,
-        name: 'Eslint',
-      },
-      {
-        id: 14,
+        id: 9,
         name: 'Jest',
+      },
+      {
+        id: 10,
+        name: 'React testing library',
       },
     ],
     period: {
-      ru: 'с 12.2021 по 12.2023',
-      en: 'from 2021.12 to 2023.12',
+      ru: 'с 05.2021 по 12.2023',
+      en: 'from 2021.05 to 2023.12',
     },
   },
   {
-    id: 6,
+    id: 4,
     name: 'Ломбард - Л1',
     description: {
       ru: 'ООО "Ломбард - Л1" - финансовая организация, предоставляющая займы физическим лицам ' +
@@ -328,11 +187,11 @@ const PROJECTS: Project[] = [
     stack: [
       {
         id: 1,
-        name: 'React 18.2.0',
+        name: 'React',
       },
       {
         id: 2,
-        name: 'React router dom',
+        name: 'TypeScript',
       },
       {
         id: 3,
@@ -340,19 +199,15 @@ const PROJECTS: Project[] = [
       },
       {
         id: 4,
-        name: 'Material UI',
+        name: 'React Query',
       },
       {
         id: 5,
-        name: 'Axios',
+        name: 'Material UI',
       },
       {
         id: 6,
         name: 'Classnames',
-      },
-      {
-        id: 7,
-        name: 'Eslint',
       },
     ],
     period: {
@@ -361,33 +216,7 @@ const PROJECTS: Project[] = [
     },
   },
   {
-    id: 7,
-    name: 'Платформа строительных сервисов (Outstaff)',
-    description: {
-      ru: 'Платформа строительных сервисов — системное решение для оперативного управления строительными проектами.',
-      en: 'The construction services platform is a system solution for operational management of construction projects.',
-    },
-    responsibility: {
-      ru: 'Доработка существующего функционала платформы. Реализация новых фичей согласно техническому заданию заказчика.',
-      en: 'Improvement of the existing functionality of the platform. ' +
-        'Implementation of new features according to the customer terms of reference.',
-    },
-    href: 'https://csp24.ru/',
-    src: pss,
-    alt: 'Construction services platform',
-    stack: [
-      {
-        id: 1,
-        name: 'React 17.0.2',
-      },
-    ],
-    period: {
-      ru: 'с 02.2024 по 03.2024',
-      en: 'from 2024.02 to 2024.03',
-    },
-  },
-  {
-    id: 8,
+    id: 5,
     name: 'Автодор (Outstaff)',
     description: {
       ru: 'ООО «Автодор – Платные Дороги» входит в группу компаний «Автодор». ' +
@@ -410,16 +239,20 @@ const PROJECTS: Project[] = [
     stack: [
       {
         id: 1,
-        name: 'React 17.2.0',
+        name: 'React',
+      },
+      {
+        id: 2,
+        name: 'TypeScript',
       },
     ],
     period: {
-      ru: 'с 03.2024 по 04.2024',
-      en: 'from 2024.03 to 2024.04',
+      ru: 'с 02.2024 по 04.2024',
+      en: 'from 2024.02 to 2024.04',
     },
   },
   {
-    id: 9,
+    id: 6,
     name: '@Your Service',
     description: {
       ru: 'YourService — сайт сервиса для поиска специалистов в Западной Европе.',
@@ -439,11 +272,11 @@ const PROJECTS: Project[] = [
     stack: [
       {
         id: 1,
-        name: 'React 18.2.0',
+        name: 'React',
       },
       {
         id: 2,
-        name: 'React router dom',
+        name: 'TypeScript',
       },
       {
         id: 3,
@@ -463,26 +296,14 @@ const PROJECTS: Project[] = [
       },
       {
         id: 7,
-        name: 'TypeScript',
-      },
-      {
-        id: 8,
         name: 'Material UI',
       },
       {
-        id: 9,
-        name: 'Axios',
-      },
-      {
-        id: 10,
+        id: 8,
         name: 'Classnames',
       },
       {
-        id: 11,
-        name: 'Eslint',
-      },
-      {
-        id: 12,
+        id: 9,
         name: 'Google-maps react',
       },
     ],
@@ -492,7 +313,7 @@ const PROJECTS: Project[] = [
     },
   },
   {
-    id: 10,
+    id: 7,
     name: 'Rafarma',
     description: {
       ru: 'АО «Рафарма» - научно-производственный фармацевтический комплекс ' +
@@ -517,11 +338,11 @@ const PROJECTS: Project[] = [
     stack: [
       {
         id: 1,
-        name: 'React 18.2.0',
+        name: 'React',
       },
       {
         id: 2,
-        name: 'React router dom',
+        name: 'TypeScript',
       },
       {
         id: 3,
@@ -541,14 +362,6 @@ const PROJECTS: Project[] = [
       },
       {
         id: 7,
-        name: 'TypeScript',
-      },
-      {
-        id: 8,
-        name: 'Eslint',
-      },
-      {
-        id: 9,
         name: 'Classnames',
       },
     ],
@@ -558,7 +371,7 @@ const PROJECTS: Project[] = [
     },
   },
   {
-    id: 11,
+    id: 8,
     name: 'Service Me',
     description: {
       ru: 'Service Me - приложение для записи автомобиля на сервис.',
@@ -581,11 +394,11 @@ const PROJECTS: Project[] = [
     stack: [
       {
         id: 1,
-        name: 'React 18.2.0',
+        name: 'React',
       },
       {
         id: 2,
-        name: 'React router dom',
+        name: 'TypeScript',
       },
       {
         id: 3,
@@ -600,19 +413,11 @@ const PROJECTS: Project[] = [
         name: 'RTK Query',
       },
       {
-        id: 7,
-        name: 'TypeScript',
-      },
-      {
-        id: 8,
-        name: 'Eslint',
-      },
-      {
-        id: 9,
+        id: 6,
         name: 'Classnames',
       },
       {
-        id: 10,
+        id: 7,
         name: 'React yandex-maps',
       },
     ],
@@ -622,7 +427,7 @@ const PROJECTS: Project[] = [
     },
   },
   {
-    id: 12,
+    id: 9,
     name: 'WandWork',
     description: {
       ru: 'WandWork - приложение-социальная сеть для заказчиков и фрилансеров.',
@@ -642,11 +447,11 @@ const PROJECTS: Project[] = [
     stack: [
       {
         id: 1,
-        name: 'React 18.2.0',
+        name: 'React',
       },
       {
         id: 2,
-        name: 'React router dom',
+        name: 'TypeScript',
       },
       {
         id: 3,
@@ -658,20 +463,62 @@ const PROJECTS: Project[] = [
       },
       {
         id: 5,
-        name: 'TypeScript',
-      },
-      {
-        id: 6,
-        name: 'Eslint',
-      },
-      {
-        id: 7,
         name: 'Classnames',
       },
     ],
     period: {
       ru: 'с 11.2024 по 03.2025',
       en: 'from 2024.11 to 2025.03',
+    },
+  },
+  {
+    id: 10,
+    name: 'Teboil',
+    description: {
+      ru: 'Продукция Teboil — высокоэффективные смазочные материалы, соответствующие международным стандартам качества. ' +
+        'Даже в экстремальных условиях эксплуатации они обеспечивают бесперебойную работу техники и оборудования.',
+      en: 'Teboil products are highly efficient lubricants that meet international quality standards. ' +
+        'Even in extreme operating conditions, they ensure the smooth operation of machinery and equipment.',
+    },
+    responsibility: {
+      ru: 'Старший фронтенд разработчик на трех поддоменах: основной сайт, интернет-магазин, и сайт азс. ' +
+        'Поддержка существующего функционала, а также разработка нового согласно требованиям бизнеса. ' +
+        'Участие в координации команды, грумминг требований и их последующая декомпозиция по задачам. ' +
+        'Выбор и реализация структуры для нового функционала. Адаптивная верстка макетов новых разделов (mobile first).',
+      en: 'Senior frontend developer on three subdomains: the main site, the online store, and the gas station site. ' +
+        'Support for existing functionality, as well as the development of new ones according to business requirements. ' +
+        'Participation in team coordination, grooming of requirements and their subsequent decomposition by tasks. ' +
+        'Selection and implementation of the structure for the new functionality. ' +
+        'Adaptive layout of new sections (mobile first).',
+    },
+    href: 'https://teboil.ru/',
+    src: teboil,
+    alt: 'Teboil',
+    stack: [
+      {
+        id: 1,
+        name: 'React',
+      },
+      {
+        id: 2,
+        name: 'Next.js',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+      },
+      {
+        id: 4,
+        name: 'PHP',
+      },
+      {
+        id: 5,
+        name: 'Axios',
+      },
+    ],
+    period: {
+      ru: 'с 07.2025 по 05.2026',
+      en: 'from 2025.07 to 2026.05',
     },
   },
 ];
