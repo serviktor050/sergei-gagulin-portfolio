@@ -30,7 +30,6 @@ const AboutPage: React.FC = ()=>  {
         <div className={cx('description-item')}>{t('about-page.description-4')}</div>
         <div className={cx('description-item')}>{t('about-page.description-5')}</div>
         <div className={cx('description-item')}>{t('about-page.description-6')}</div>
-        <div className={cx('description-item')}>{t('about-page.description-7')}</div>
       </div>
       <Technologies />
     </PageLayout>
